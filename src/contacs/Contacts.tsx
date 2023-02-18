@@ -1,22 +1,17 @@
 import React from 'react';
-import styledContainer from '../common/Container.module.css';
-import { Title } from '../common/title/Title';
-import styles from './Contacts.module.css';
+import {Title} from '../common/components/title/Title';
+import styles from './Contacts.module.scss';
 
 export const Contacts = () => {
     return (
         <div className={styles.contactsBlock}>
-            <div className={`${styledContainer.container} ${styles.container}`}>
+            <div className={styles.container}>
                 <Title value={'Contacts'}/>
-                <form className={styles.contactForm}>
-                    <input type="text"/>
-                    <input type="text"/>
-                    <textarea/>
-                    <button
-                        type={'submit'}
-                        className={styles.submitBtn}
-                    >SEND
-                    </button>
+                <form className={styles.form}>
+                    <input type="text" className={styles.formArea} placeholder={'Name'}/>
+                    <input type="text" className={styles.formArea} placeholder={'eMail'}/>
+                    <textarea className={styles.messageArea} placeholder={'Message'}/>
+                    <button type={'submit'}>Send message</button>
                 </form>
             </div>
         </div>

@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from './Projects.module.scss';
-import styledContainer from '../common/Container.module.css';
 import {Project} from './Project/Project';
-import {Title} from '../common/title/Title';
+import {Title} from '../common/components/title/Title';
 import projectImg from '../assets/images/Imports1.jpeg';
 
 export const Projects = () => {
@@ -10,7 +9,7 @@ export const Projects = () => {
 
     return (
         <div className={styles.projectsBlock}>
-            <div className={`${styledContainer.container} ${styles.projectsContainer}`}>
+            <div className={styles.projectsContainer}>
                 <Title
                     value={'Projects'}
                 />

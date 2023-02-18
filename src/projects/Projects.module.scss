@@ -1,7 +1,7 @@
-@import './src/common/variables';
+@import './src/common/styles/variables';
 
 .projectsBlock {
-  background-color: $bgColor;
+  background-color: $bgPrimary;
   padding: 100px 0;
 
   .projectsContainer {

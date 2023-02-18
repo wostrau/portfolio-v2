@@ -1,15 +1,14 @@
-@import './src/common/variables';
+@import '../../styles/variables';
+@import '../../styles/mixins';
 
 .title {
   margin: 0 0 30px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
+  @include text($titleFontFamily, 36px, 1.2, 300);
   color: $textColor;
   text-transform: capitalize;
-  font-size: 36px;
-  line-height: 1.2;
   letter-spacing: 5px;
   position: relative;
+  text-align: center;
 
   & h2 {
     margin: 0;
