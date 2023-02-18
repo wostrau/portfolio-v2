@@ -1,8 +1,10 @@
+@import './src/common/variables';
+
 .title {
   margin: 0 0 30px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
-  color: #fff;
+  color: $textColor;
   text-transform: capitalize;
   font-size: 36px;
   line-height: 1.2;
@@ -17,7 +19,7 @@
     content: '';
     position: absolute;
     bottom: -30px;
-    background: #4e93e6;
+    background: $primaryColor;
     width: 55px;
     height: 1px;
     left: 50%;
