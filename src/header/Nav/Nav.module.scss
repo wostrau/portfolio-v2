@@ -1,0 +1,20 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+.nav {
+  width: 340px;
+  @include flex(row, space-between, stretch, nowrap);
+
+  a {
+    @include text($titleFontFamily, 16px, 1.2, 400);
+    color: $textColor;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      color: $primaryColor;
+    }
+  }
+  .active {
+    color: $primaryColor;
+  }
+}

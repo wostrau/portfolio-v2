@@ -5,7 +5,7 @@ import {Title} from '../common/components/title/Title';
 
 export const Skills = () => {
     return (
-        <div className={styles.skillsBlock}>
+        <div id={'skills'} className={styles.skillsBlock}>
             <div className={styles.skillsContainer}>
                 <Title value={'Skills'}/>
                 <div className={styles.skills}>

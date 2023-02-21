@@ -44,6 +44,7 @@
 
   .projectInfo {
     padding: 25px 20px;
+    color: $textColor;
 
     .projectTitle {
       @include text($titleFontFamily, 16px, 1.2, 400);

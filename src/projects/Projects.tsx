@@ -8,11 +8,12 @@ export const Projects = () => {
     const background = {backgroundImage: `url(${projectImg})`};
 
     return (
-        <div className={styles.projectsBlock}>
-            <div className={styles.projectsContainer}>
-                <Title
-                    value={'Projects'}
-                />
+        <div
+            id='projects'
+            className={styles.projectsBlock}
+        >
+            <div className={styles.container}>
+                <Title value={'Projects'}/>
                 <div className={styles.projects}>
                     <Project
                         title={'SN'}

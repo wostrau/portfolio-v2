@@ -9,13 +9,13 @@ export const ParticlesTS = () => {
         await console.log(container);
     }, []);
 
-    return <Particles id="tsparticles"
+    return <Particles id='particles'
                       init={particlesInit}
                       loaded={particlesLoaded}
                       options={{
                           background: {
                               color: {
-                                  value: '#0d47a1',
+                                  value: '',
                               },
                           },
                           fpsLimit: 120,
@@ -36,7 +36,7 @@ export const ParticlesTS = () => {
                                       quantity: 4,
                                   },
                                   repulse: {
-                                      distance: 200,
+                                      distance: 150,
                                       duration: 0.4,
                                   },
                               },
@@ -49,7 +49,7 @@ export const ParticlesTS = () => {
                                   color: '#ffffff',
                                   distance: 150,
                                   enable: true,
-                                  opacity: 0.5,
+                                  opacity: 0.3,
                                   width: 1,
                               },
                               collisions: {
@@ -62,7 +62,7 @@ export const ParticlesTS = () => {
                                       default: 'bounce',
                                   },
                                   random: false,
-                                  speed: 6,
+                                  speed: 1,
                                   straight: false,
                               },
                               number: {
@@ -73,13 +73,13 @@ export const ParticlesTS = () => {
                                   value: 80,
                               },
                               opacity: {
-                                  value: 0.5,
+                                  value: 0.3,
                               },
                               shape: {
                                   type: 'circle',
                               },
                               size: {
-                                  value: {min: 1, max: 5},
+                                  value: {min: 1, max: 1},
                               },
                           },
                           detectRetina: true,
